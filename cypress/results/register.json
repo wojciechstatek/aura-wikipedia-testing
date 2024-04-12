@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 4,
-    "start": "2024-04-12T09:58:07.677Z",
-    "end": "2024-04-12T09:58:39.198Z",
-    "duration": 31521,
+    "start": "2024-04-12T11:53:11.961Z",
+    "end": "2024-04-12T11:53:47.251Z",
+    "duration": 35290,
     "testsRegistered": 4,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ef6e3f42-ca13-4b66-a755-23c849835895",
+      "uuid": "c813bd5d-dd37-4486-a0af-797761113f58",
       "title": "",
       "fullFile": "cypress\\e2e\\register.cy.js",
       "file": "cypress\\e2e\\register.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "953ac9c0-0451-4919-bc5a-c3892895282d",
+          "uuid": "6f90fd76-a118-4d53-b748-995b306ede9b",
           "title": "Register functionality",
           "fullFile": "",
           "file": "",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "d45123d0-7de1-4224-aac3-3c72aa01f503",
+              "uuid": "848ae7fb-bdcf-408a-aa61-f61c2cf6a5de",
               "title": "Navigate to registration",
               "fullFile": "",
               "file": "",
@@ -47,7 +47,7 @@
                   "title": "Create new account - from main page",
                   "fullTitle": "Register functionality Navigate to registration Create new account - from main page",
                   "timedOut": null,
-                  "duration": 9219,
+                  "duration": 8756,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -57,11 +57,11 @@
                   "code": "mainPage.goToRegistration();\nregisterPage.accountCreationSuccessful(username, password, email);\nwelcomeSurvey.checkWelcomeHeading();",
                   "err": {
                     "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page' to include '/w/index.php?title=Special:WelcomeSurvey'",
-                    "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page' to include '/w/index.php?title=Special:WelcomeSurvey'\n    at Object.checkIncludesURL (webpack://aura-wikipedia-tests/./cypress/support/commonFunctions.js:8:20)\n    at Object.checkWelcomeHeading (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/welcomeSurvey.js:7:11)\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/register.cy.js:22:26)",
+                    "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page' to include '/w/index.php?title=Special:WelcomeSurvey'\n    at Object.checkIncludesURL (webpack://aura-wikipedia-tests/./cypress/support/commonFunctions.js:8:20)\n    at Object.checkWelcomeHeading (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/welcomeSurvey.js:7:11)\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/register.cy.js:23:26)",
                     "diff": null
                   },
-                  "uuid": "b1d1b66d-696f-4e07-bee2-0746c1e1db2c",
-                  "parentUUID": "d45123d0-7de1-4224-aac3-3c72aa01f503",
+                  "uuid": "4ab3e8dd-9e3c-46ac-b4a7-5f51fff0f99b",
+                  "parentUUID": "848ae7fb-bdcf-408a-aa61-f61c2cf6a5de",
                   "isHook": false,
                   "skipped": false
                 },
@@ -69,7 +69,7 @@
                   "title": "Create new account - through login page",
                   "fullTitle": "Register functionality Navigate to registration Create new account - through login page",
                   "timedOut": null,
-                  "duration": 10051,
+                  "duration": 8883,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -79,11 +79,11 @@
                   "code": "mainPage.goToLogin();\nloginPage.goToRegistration();\nregisterPage.accountCreationSuccessful(username, password, email);\nwelcomeSurvey.checkWelcomeHeading();",
                   "err": {
                     "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page&campaign=loginCTA' to include '/w/index.php?title=Special:WelcomeSurvey'",
-                    "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page&campaign=loginCTA' to include '/w/index.php?title=Special:WelcomeSurvey'\n    at Object.checkIncludesURL (webpack://aura-wikipedia-tests/./cypress/support/commonFunctions.js:8:20)\n    at Object.checkWelcomeHeading (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/welcomeSurvey.js:7:11)\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/register.cy.js:29:26)",
+                    "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page&campaign=loginCTA' to include '/w/index.php?title=Special:WelcomeSurvey'\n    at Object.checkIncludesURL (webpack://aura-wikipedia-tests/./cypress/support/commonFunctions.js:8:20)\n    at Object.checkWelcomeHeading (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/welcomeSurvey.js:7:11)\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/register.cy.js:30:26)",
                     "diff": null
                   },
-                  "uuid": "3a65d72e-6d92-4394-97d4-81b8eb243b4e",
-                  "parentUUID": "d45123d0-7de1-4224-aac3-3c72aa01f503",
+                  "uuid": "df835026-b42a-4fd2-97a1-11eaaae84398",
+                  "parentUUID": "848ae7fb-bdcf-408a-aa61-f61c2cf6a5de",
                   "isHook": false,
                   "skipped": false
                 }
@@ -91,18 +91,18 @@
               "suites": [],
               "passes": [],
               "failures": [
-                "b1d1b66d-696f-4e07-bee2-0746c1e1db2c",
-                "3a65d72e-6d92-4394-97d4-81b8eb243b4e"
+                "4ab3e8dd-9e3c-46ac-b4a7-5f51fff0f99b",
+                "df835026-b42a-4fd2-97a1-11eaaae84398"
               ],
               "pending": [],
               "skipped": [],
-              "duration": 19270,
+              "duration": 17639,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "50351214-5495-4db5-8e88-bb092a1b2fdf",
+              "uuid": "b42d7f5d-be80-40a3-ba36-90605059f11e",
               "title": "Start on register page",
               "fullFile": "",
               "file": "",
@@ -113,7 +113,7 @@
                   "title": "Create new account - successfully",
                   "fullTitle": "Register functionality Start on register page Create new account - successfully",
                   "timedOut": null,
-                  "duration": 7336,
+                  "duration": 7259,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -123,11 +123,11 @@
                   "code": "registerPage.accountCreationSuccessful(username, password, email);\nwelcomeSurvey.checkWelcomeHeading();",
                   "err": {
                     "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page' to include '/w/index.php?title=Special:WelcomeSurvey'",
-                    "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page' to include '/w/index.php?title=Special:WelcomeSurvey'\n    at Object.checkIncludesURL (webpack://aura-wikipedia-tests/./cypress/support/commonFunctions.js:8:20)\n    at Object.checkWelcomeHeading (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/welcomeSurvey.js:7:11)\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/register.cy.js:42:26)",
+                    "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page' to include '/w/index.php?title=Special:WelcomeSurvey'\n    at Object.checkIncludesURL (webpack://aura-wikipedia-tests/./cypress/support/commonFunctions.js:8:20)\n    at Object.checkWelcomeHeading (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/welcomeSurvey.js:7:11)\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/register.cy.js:43:26)",
                     "diff": null
                   },
-                  "uuid": "accd39ec-f1ba-493d-b78f-becee68ce29e",
-                  "parentUUID": "50351214-5495-4db5-8e88-bb092a1b2fdf",
+                  "uuid": "fc06e6ab-558c-49ca-a096-991dbfd2bec7",
+                  "parentUUID": "b42d7f5d-be80-40a3-ba36-90605059f11e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -135,21 +135,21 @@
                   "title": "Create new account - password mismatch",
                   "fullTitle": "Register functionality Start on register page Create new account - password mismatch",
                   "timedOut": null,
-                  "duration": 1141,
+                  "duration": 7365,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
                   "fail": true,
                   "pending": false,
                   "context": "[\n  \"../screenshots/register.cy.js/Register functionality -- Start on register page -- Create new account - password mismatch (failed).png\",\n  \"../videos/register.cy.js.mp4\"\n]",
-                  "code": "registerPage.accountCreationPasswordMismatch();",
+                  "code": "registerPage.accountCreationPasswordMismatch(username, password, otherPassword, email);",
                   "err": {
-                    "message": "ReferenceError: password is not defined",
-                    "estack": "ReferenceError: password is not defined\n    at Object.accountCreationPasswordMismatch (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/registerPage.js:32:39)\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/register.cy.js:46:25)",
+                    "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#mw-htmlform-invalid-input > #cdx-field__validation-message > #mw-message-box-error > div`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#mw-htmlform-invalid-input > #cdx-field__validation-message > #mw-message-box-error > div`, but never found it.\n    at passwordMismatchError (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/registerPage.js:14:37)\n    at Object.accountCreationPasswordMismatch (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/registerPage.js:37:4)\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/register.cy.js:47:25)",
                     "diff": null
                   },
-                  "uuid": "f90ea771-8feb-4936-947b-1caa6df99120",
-                  "parentUUID": "50351214-5495-4db5-8e88-bb092a1b2fdf",
+                  "uuid": "ba5754d5-09de-44a6-816d-69f794655bf0",
+                  "parentUUID": "b42d7f5d-be80-40a3-ba36-90605059f11e",
                   "isHook": false,
                   "skipped": false
                 }
@@ -157,12 +157,12 @@
               "suites": [],
               "passes": [],
               "failures": [
-                "accd39ec-f1ba-493d-b78f-becee68ce29e",
-                "f90ea771-8feb-4936-947b-1caa6df99120"
+                "fc06e6ab-558c-49ca-a096-991dbfd2bec7",
+                "ba5754d5-09de-44a6-816d-69f794655bf0"
               ],
               "pending": [],
               "skipped": [],
-              "duration": 8477,
+              "duration": 14624,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000

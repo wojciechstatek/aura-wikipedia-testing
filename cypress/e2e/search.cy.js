@@ -41,7 +41,7 @@ describe('Search Functionality on main page', () => {
     searchResults.ambiguousArticle(ambiguousArticle)
   });
 
-  it('Show search meu after typing text', () => {
+  it('Show search menu after typing text', () => {
     mainPage.typeInSearchBox()
     mainPage.showSearchMenu()
   })

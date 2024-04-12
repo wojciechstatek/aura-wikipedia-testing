@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 1,
-    "start": "2024-04-12T09:57:38.700Z",
-    "end": "2024-04-12T09:58:01.326Z",
-    "duration": 22626,
+    "start": "2024-04-12T11:52:41.526Z",
+    "end": "2024-04-12T11:53:05.695Z",
+    "duration": 24169,
     "testsRegistered": 4,
     "passPercent": 75,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c3423cb0-97b8-4e5a-8f4e-16b20b3ceba7",
+      "uuid": "005e95e9-d945-4f1b-9bdc-f36a8a346c28",
       "title": "",
       "fullFile": "cypress\\e2e\\login.cy.js",
       "file": "cypress\\e2e\\login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1a8146b9-5e52-4ade-b041-1ff485047c04",
+          "uuid": "ac1b8b87-522d-4fcd-a1de-726013c1af03",
           "title": "Login functionality",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "should login with valid credentials",
               "fullTitle": "Login functionality should login with valid credentials",
               "timedOut": null,
-              "duration": 8903,
+              "duration": 10100,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": "\"../videos/login.cy.js.mp4\"",
               "code": "loginPage.logIn(username, password);\nloginPage.checkLogInSuccessful();",
               "err": {},
-              "uuid": "d69c1715-11e8-4d32-8292-274634489c1f",
-              "parentUUID": "1a8146b9-5e52-4ade-b041-1ff485047c04",
+              "uuid": "817711bf-4cfd-4e97-ae29-da9477ecb69b",
+              "parentUUID": "ac1b8b87-522d-4fcd-a1de-726013c1af03",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should display error message for invalid credentials",
               "fullTitle": "Login functionality should display error message for invalid credentials",
               "timedOut": null,
-              "duration": 2688,
+              "duration": 2548,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": "\"../videos/login.cy.js.mp4\"",
               "code": "loginPage.logIn('invalid', 'invalid');\nloginPage.checkErrorBox();",
               "err": {},
-              "uuid": "dd1f236d-0ad6-413e-b602-a32c8d8aaa1e",
-              "parentUUID": "1a8146b9-5e52-4ade-b041-1ff485047c04",
+              "uuid": "c5dd15e2-77b5-43d7-9eb1-7494a681926b",
+              "parentUUID": "ac1b8b87-522d-4fcd-a1de-726013c1af03",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "should display error message for empty username or password",
               "fullTitle": "Login functionality should display error message for empty username or password",
               "timedOut": null,
-              "duration": 5365,
+              "duration": 5420,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -87,8 +87,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.error`, but never found it.\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/login.cy.js:26:21)",
                 "diff": null
               },
-              "uuid": "1a6f5ae7-0cea-4c6f-ae9b-4047dada1353",
-              "parentUUID": "1a8146b9-5e52-4ade-b041-1ff485047c04",
+              "uuid": "4a30be26-5401-4374-8929-3795ac92542b",
+              "parentUUID": "ac1b8b87-522d-4fcd-a1de-726013c1af03",
               "isHook": false,
               "skipped": false
             },
@@ -96,7 +96,7 @@
               "title": "should navigate to forgot password page",
               "fullTitle": "Login functionality should navigate to forgot password page",
               "timedOut": null,
-              "duration": 1956,
+              "duration": 1872,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -105,24 +105,24 @@
               "context": "\"../videos/login.cy.js.mp4\"",
               "code": "loginPage.forgotPasswordCheck();",
               "err": {},
-              "uuid": "65ee617a-5ee0-47ce-b341-8a368751380c",
-              "parentUUID": "1a8146b9-5e52-4ade-b041-1ff485047c04",
+              "uuid": "4331e18f-4096-41e5-8b9d-912380586cde",
+              "parentUUID": "ac1b8b87-522d-4fcd-a1de-726013c1af03",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d69c1715-11e8-4d32-8292-274634489c1f",
-            "dd1f236d-0ad6-413e-b602-a32c8d8aaa1e",
-            "65ee617a-5ee0-47ce-b341-8a368751380c"
+            "817711bf-4cfd-4e97-ae29-da9477ecb69b",
+            "c5dd15e2-77b5-43d7-9eb1-7494a681926b",
+            "4331e18f-4096-41e5-8b9d-912380586cde"
           ],
           "failures": [
-            "1a6f5ae7-0cea-4c6f-ae9b-4047dada1353"
+            "4a30be26-5401-4374-8929-3795ac92542b"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 18912,
+          "duration": 19940,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

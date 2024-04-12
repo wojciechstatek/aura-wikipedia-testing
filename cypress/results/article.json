@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 1,
-    "start": "2024-04-12T09:56:47.889Z",
-    "end": "2024-04-12T09:57:32.776Z",
-    "duration": 44887,
+    "start": "2024-04-12T11:51:48.172Z",
+    "end": "2024-04-12T11:52:35.458Z",
+    "duration": 47286,
     "testsRegistered": 3,
     "passPercent": 66.66666666666666,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7bc2d434-be15-4e6f-a471-d8c2c2f20ce7",
+      "uuid": "97cf771e-86c6-44f3-bc60-ca1de2011044",
       "title": "",
       "fullFile": "cypress\\e2e\\article.cy.js",
       "file": "cypress\\e2e\\article.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "202a0d23-535b-49d1-9bce-3c5470bdf2b5",
+          "uuid": "63d5a8d4-1216-4c90-b1e7-6850125e4ebd",
           "title": "Article Navigation",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Navigate to section within the article",
               "fullTitle": "Article Navigation Navigate to section within the article",
               "timedOut": null,
-              "duration": 1901,
+              "duration": 2529,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": "\"../videos/article.cy.js.mp4\"",
               "code": "articleView.checkArticleTitle(articleTitle);\narticleView.openChapterFromTOC(chapter);",
               "err": {},
-              "uuid": "4f120f9c-6a28-4d14-bea8-21517fd3247b",
-              "parentUUID": "202a0d23-535b-49d1-9bce-3c5470bdf2b5",
+              "uuid": "6cd0ef33-7de9-4ce1-9ff6-3a1a8f128eda",
+              "parentUUID": "63d5a8d4-1216-4c90-b1e7-6850125e4ebd",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Open external link in a new tab",
               "fullTitle": "Article Navigation Open external link in a new tab",
               "timedOut": null,
-              "duration": 6768,
+              "duration": 7052,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en.wikipedia.org/w/index.php?title=Black_hole&action=edit' to equal 'https://www.bbc.co.uk/programmes/p00547f4'\n    at Object.openNthExternalLink (webpack://aura-wikipedia-tests/./cypress/support/pageObjects/articleView.js:40:55)\n    at Context.eval (webpack://aura-wikipedia-tests/./cypress/e2e/article.cy.js:21:20)",
                 "diff": "- 'https://en.wikipedia.org/w/index.php?title=Black_hole&action=edit'\n+ 'https://www.bbc.co.uk/programmes/p00547f4'\n"
               },
-              "uuid": "e7b057da-47c8-4f21-a7a6-5fd75534bad4",
-              "parentUUID": "202a0d23-535b-49d1-9bce-3c5470bdf2b5",
+              "uuid": "1ca8d470-8c0d-4618-bdb2-1fde47942494",
+              "parentUUID": "63d5a8d4-1216-4c90-b1e7-6850125e4ebd",
               "isHook": false,
               "skipped": false
             },
@@ -78,7 +78,7 @@
               "title": "Jump to corresponding reference section",
               "fullTitle": "Article Navigation Jump to corresponding reference section",
               "timedOut": null,
-              "duration": 2448,
+              "duration": 1711,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -87,23 +87,23 @@
               "context": "\"../videos/article.cy.js.mp4\"",
               "code": "articleView.checkArticleTitle(articleTitle);\narticleView.viewNthReference(1);",
               "err": {},
-              "uuid": "f2182bc2-1c0f-48c0-8cba-fd838cfde885",
-              "parentUUID": "202a0d23-535b-49d1-9bce-3c5470bdf2b5",
+              "uuid": "48ec84a7-55df-4158-b503-98bcbf0ee674",
+              "parentUUID": "63d5a8d4-1216-4c90-b1e7-6850125e4ebd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4f120f9c-6a28-4d14-bea8-21517fd3247b",
-            "f2182bc2-1c0f-48c0-8cba-fd838cfde885"
+            "6cd0ef33-7de9-4ce1-9ff6-3a1a8f128eda",
+            "48ec84a7-55df-4158-b503-98bcbf0ee674"
           ],
           "failures": [
-            "e7b057da-47c8-4f21-a7a6-5fd75534bad4"
+            "1ca8d470-8c0d-4618-bdb2-1fde47942494"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 11117,
+          "duration": 11292,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
