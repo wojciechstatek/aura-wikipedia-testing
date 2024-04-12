@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-12T09:58:44.848Z",
+    "end": "2024-04-12T09:58:57.910Z",
+    "duration": 13062,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bc553279-7a51-40d4-a92c-658d3254a227",
+      "title": "",
+      "fullFile": "cypress\\e2e\\revisionHistory.cy.js",
+      "file": "cypress\\e2e\\revisionHistory.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5cc92a9c-c0a7-4fef-83f6-9a5638a4cc08",
+          "title": "Revision History",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Display past revisions",
+              "fullTitle": "Revision History Display past revisions",
+              "timedOut": null,
+              "duration": 2357,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"../videos/revisionHistory.cy.js.mp4\"",
+              "code": "articleView.goToRevisionHistory();\nrevisionHistory.checkRevisionUrl(articleTitle, 'History');\nrevisionHistory.revisionHistoryVisible();",
+              "err": {},
+              "uuid": "2aa6cc46-986a-4d82-b98f-c71cd8846bf1",
+              "parentUUID": "5cc92a9c-c0a7-4fef-83f6-9a5638a4cc08",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "View specific revision content",
+              "fullTitle": "Revision History View specific revision content",
+              "timedOut": null,
+              "duration": 4213,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"../videos/revisionHistory.cy.js.mp4\"",
+              "code": "articleView.goToRevisionHistory();\nrevisionHistory.checkRevisionUrl(articleTitle, 'History');\nrevisionHistory.openNthRevisionContent(2);\nrevisionHistory.checkRevisionUrl(articleTitle, 'Content');\nrevisionHistory.revisionTextboxVisible();",
+              "err": {},
+              "uuid": "ab6d944d-dccf-46ca-8ffd-9f3478f5eecd",
+              "parentUUID": "5cc92a9c-c0a7-4fef-83f6-9a5638a4cc08",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Compare two revisions",
+              "fullTitle": "Revision History Compare two revisions",
+              "timedOut": null,
+              "duration": 3008,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"../videos/revisionHistory.cy.js.mp4\"",
+              "code": "articleView.goToRevisionHistory();\nrevisionHistory.checkRevisionUrl(articleTitle, 'History');\nrevisionHistory.chooseRevisionsToDiff(5, 2);\nrevisionHistory.checkRevisionUrl(articleTitle, 'Compare');\ncy.get('.diff').should('be.visible');",
+              "err": {},
+              "uuid": "b40ce87a-833c-4abf-8682-d42a88dad22c",
+              "parentUUID": "5cc92a9c-c0a7-4fef-83f6-9a5638a4cc08",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2aa6cc46-986a-4d82-b98f-c71cd8846bf1",
+            "ab6d944d-dccf-46ca-8ffd-9f3478f5eecd",
+            "b40ce87a-833c-4abf-8682-d42a88dad22c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9578,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name].html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "useInlineDiffs": true,
+        "embeddedScreenshots": true,
+        "reportDir": "cypress/results",
+        "reportFilename": "[name].html",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
